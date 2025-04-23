@@ -5,7 +5,6 @@ import { fetchProducts } from '../services/api';
 
 const ProductList = ({ addToCart, searchTerm }) => {
     const { category } = useParams();
-    // State for products display, loading status, and full product list
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [allProducts, setAllProducts] = useState([]); // Store all products for search
@@ -61,7 +60,7 @@ const ProductList = ({ addToCart, searchTerm }) => {
         setProducts(searchResults);
     }, [searchTerm, allProducts, category]);
 
-    // Show loading state while fetching data
+
     if (loading) return <div className="text-center p-8">Loading...</div>;
 
     return (

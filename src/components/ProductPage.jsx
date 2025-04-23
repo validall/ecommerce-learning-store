@@ -40,7 +40,7 @@ const ProductPage = ({ addToCart }) => {
     return (
         <div className="container mx-auto p-4">
             <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row">
-                {/* Product image section */}
+
                 <div className="md:w-1/2 flex justify-center items-center p-4">
                     <img
                         src={product.image}
@@ -49,19 +49,19 @@ const ProductPage = ({ addToCart }) => {
                     />
                 </div>
 
-                {/* Product details section */}
+
                 <div className="md:w-1/2 md:pl-6">
                     <h1 className="text-2xl font-bold mb-2 text-gray-800">{product.title}</h1>
                     <p className="text-gray-700 mb-4">{product.description}</p>
 
-                    {/* Category badge */}
+
                     <div className="flex items-center mb-4">
                         <span className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
                             {product.category}
                         </span>
                     </div>
 
-                    {/* Price and add to cart button */}
+
                     <div className="flex items-center justify-between mb-4">
                         <span className="text-3xl font-bold text-gray-800">${product.price.toFixed(2)}</span>
                         <button

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-// Import components
 import Header from './components/Header';
 import ProductList from './components/ProductList';
 import ProductPage from './components/ProductPage';
@@ -9,7 +8,6 @@ import CategoryMenu from './components/CategoryMenu';
 import './App.css';
 
 function App() {
-  // Application state
   const [categories, setCategories] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -51,10 +49,10 @@ function App() {
 
   return (
     <>
-      {/* Header component with cart controls */}
+
       <Header cartItemCount={cartItemCount} />
 
-      {/* Category menu with search functionality */}
+
       <CategoryMenu
         categories={categories}
         searchTerm={searchTerm}
@@ -62,7 +60,7 @@ function App() {
         showSearch={isSearchVisible}
       />
 
-      {/* Main content area with routes */}
+
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<ProductList addToCart={addToCart} searchTerm={searchTerm} />} />
@@ -72,7 +70,7 @@ function App() {
         </Routes>
       </main>
 
-      {/* Footer */}
+
       <footer className="bg-gray-800 text-white text-center py-4 mt-auto">
         <p>Learning Store - 2025</p>
       </footer>

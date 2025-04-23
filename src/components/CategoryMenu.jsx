@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const CategoryMenu = ({ categories, searchTerm, setSearchTerm, showSearch }) => {
     const navigate = useNavigate();
 
-    // Common style for category buttons
+    // Style for category buttons
     const buttonClassName = "px-4 py-2 rounded bg-gray-700 text-white hover:bg-blue-600 hover:text-white transition-colors";
 
     // Handle category selection

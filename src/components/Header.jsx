@@ -5,7 +5,7 @@ const Header = ({ cartItemCount }) => {
     return (
         <header className="bg-gray-900 text-white p-4">
             <div className="container mx-auto flex justify-between items-center">
-                {/* Store logo/name with link to homepage */}
+
                 <Link to="/" className="text-2xl font-bold">Learning Store</Link>
 
                 {/* Cart icon with item count */}
